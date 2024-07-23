@@ -28,5 +28,3 @@ class lancer_des :
 lanceur = LancerDes()
 lanceur.lancer_2()
 lanceur.lancer()
-
-
