@@ -2,13 +2,14 @@ from random import randint
 
 class lancer_des :
     def __init__(self, de):
-        self.de = de 
+        pass
 
     # Méthode pour lancer 1 seul dé
     def lancer(self):
         de = randint(1, 6)
         print(f"-------------------------------------\n Résultat de votre dé : {de}")
-
+        return de 
+        
     # Méthode pour lancer 2 dés
     def lancer_2(self):
         de1 = randint(1, 6)
@@ -24,7 +25,8 @@ class lancer_des :
          
 
 # Test : 
-lancer_des.lancer_2(lancer_des)
-lancer_des.lancer(lancer_des)
+lanceur = LancerDes()
+lanceur.lancer_2()
+lanceur.lancer()
 
 
